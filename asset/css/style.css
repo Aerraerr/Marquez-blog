@@ -1,0 +1,103 @@
+body { font-family: 'Inter', sans-serif; }
+.blob-shape {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: rotate(-10deg);
+}
+.blob-container{
+    width:250px;
+    height:250px;
+    overflow:hidden;
+
+    border-radius: 60% 40% 55% 45% / 55% 50% 50% 45%;
+    animation: blob 15s infinite ease-in-out;
+    }
+
+    @media (min-width: 768px) {
+        .blob-container {
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .blob-container {
+            width: 450px;
+            height: 450px;
+        }
+    }
+
+    @keyframes blob{
+    0%{border-radius:60% 40% 55% 45% / 55% 50% 50% 45%;}
+    50%{border-radius:40% 60% 45% 55% / 50% 60% 40% 50%;}
+    100%{border-radius:60% 40% 60% 45% / 55% 50% 50% 45%;}
+}
+
+.shattered {
+    position: relative;
+    display: inline-block;
+}
+
+.shattered::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-3px, -3px) rotate(3deg) scale(1.02);
+    color: rgba(107, 114, 128, 0.4);
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.shattered::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(3px, 3px) rotate(-3deg) scale(0.98);
+    color: rgba(107, 114, 128, 0.3);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.sidebar-hidden {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.sidebar-open #main {
+    margin-left: 16rem;
+}
+
+.sidebar-closed #main {
+    margin-left: 0;
+}
+
+#main {
+    transition: margin-left 0.3s ease;
+}
+
+/* Mobile responsive */
+@media (max-width: 1023px) {
+    .sidebar-open #main {
+        margin-left: 0;
+    }
+
+    .sidebar-closed #main {
+        margin-left: 0;
+    }
+
+    #sidebar {
+        z-index: 60;
+    }
+
+    .sidebar-open::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 55;
+    }
+}
