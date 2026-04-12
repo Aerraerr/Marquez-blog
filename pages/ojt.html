@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeron Jead - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+
+    </style>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+    <div class="flex min-h-screen">
+        <!-- IMAGE MODAL -->
+
+        <aside id="sidebar" class="w-64 flex flex-col justify-between p-6 md:p-10 fixed h-full border-r border-gray-50 bg-white z-50">
+            <div>
+                <h2 class="text-4xl font-black mb-16 tracking-tighter"><a href="../index.html"> </a></h2>
+                <nav class="space-y-5 text-sm font-medium text-gray-500">
+                    <a href="../index.html" class="nav-link flex items-center justify-between text-black border-b border-black pb-1 w-full">
+                        Home
+                    </a>
+
+                    <a href="../pages/ojt.html" class="nav-link block hover:text-black transition-colors">
+                        DTR
+                    </a>
+                </nav>
+            </div>
+
+            <div class="space-y-6">
+
+                <a href="mailto:marquezaeronjead@gmail.com" class="text-xs font-semibold border-b border-gray-300 pb-1 inline-block">
+                marquezaeronjead@gmail.com
+                </a>
+
+                <div class="flex space-x-5 text-gray-400 text-lg">
+                <a href="https://github.com/Aerraerr" class="hover:text-blue-600 transition">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.facebook.com/Aerraerru/" class="hover:text-blue-600 transition">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/aerrraerrruu/" class="hover:text-blue-600 transition">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aeron-jead-d-marquez-990724326/" class="hover:text-blue-600 transition">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+        </aside>
+
+        <main id="main" class="flex-1 relative flex flex-col">
+            <div id="imageModal" class="fixed inset-0 hidden bg-black/80 items-center justify-center z-50">
+                <span class="absolute top-5 right-5 text-white text-3xl cursor-pointer" onclick="closeModal()">×</span>
+
+                <img id="modalImage" class="max-w-[90%] max-h-[90%] rounded-lg shadow-lg">
+            </div>
+            <button id="toggleSidebar" class="absolute top-4 left-4 z-50 bg-gray-100 text-white p-2 rounded">☰</button>
+
+            <section class="flex flex-col flex-1 w-full max-w-6xl mx-auto px-4 md:px-6 lg:px-8 pt-20 space-y-20">
+
+                <!-- PROFILE HEADER -->
+                <div class="relative w-full -mb-10">
+
+                    <!-- Background -->
+                    <div class="h-40 md:h-30 bg-gradient-to-r from-blue-300 to-[#1a3d62] rounded-xl"></div>
+
+                    <!-- Content -->
+                    <div class="relative -mt-20 px-6 md:px-10 flex flex-col md:flex-row items-center md:items-end gap-6">
+
+                        <!-- Profile Image -->
+                        <div class="w-36 h-36 rounded-full border-4 border-white overflow-hidden shadow-lg">
+                            <img src="../asset/img/profile.jpg" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Info -->
+                        <div class="text-center md:text-left">
+                            <h1 class="text-2xl md:text-3xl font-bold md:text-white text-[#1a3d62] mb-0 md:mb-2">Aeron Jead Marquez</h1>
+                            <p class="text-gray-500 text-sm md:text-sm">
+                                IT Intern | Front-End Developer | Technical Assistant | Clerical Assistant
+                            </p>
+
+                            <!-- Social -->
+                            <div class="mt-3 flex flex-wrap justify-center md:justify-start gap-4 text-gray-600 text-lg">
+                                <a href="https://github.com/Aerraerr" class="hover:text-blue-600 transition">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://www.facebook.com/Aerraerru/" class="hover:text-blue-600 transition">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/aerrraerrruu/" class="hover:text-blue-600 transition">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/aeron-jead-d-marquez-990724326/" class="hover:text-blue-600 transition">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="mailto:marquezaeronjead@gmail.com" class="hover:text-blue-600 transition">
+                                    <i class="bi bi-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- NEW SECTION-->
+                <div class="grid md:grid-cols-3 gap-6">
+
+                    <!-- LEFT: INTERNSHIP OVERVIEW -->
+                    <div class="md:col-span-2 bg-white text-gray-800 rounded-xl p-6 space-y-6 shadow-xl">
+
+                        <h2 class="text-md font-semibold text-gray-900">Internship Overview</h2>
+
+                        <!-- TOP INFO WITH ICON -->
+                        <div class="flex gap-4 items-start">
+                            <!-- ICON -->
+                            <img src="../asset/img/uro.png" class="w-13 h-12 rounded-full object-cover">
+
+                            <!-- TEXT -->
+                            <div class="space-y-1 text-sm text-gray-700">
+                                <p><span class="font-semibold text-gray-900">Agency/Office:</span> Bicol University - University Registrar's Office</p>
+                                <p><span class="font-semibold text-gray-900">School:</span> Bicol University - College of Science</p>
+                                <p><span class="font-semibold text-gray-900">Program:</span> BS Information Technology (4th Year)</p>
+                            </div>
+                        </div>
+
+                        <hr class="border-blue-300">
+
+                        <!-- PARAGRAPH 1 WITH ICON -->
+                        <div class="flex gap-4 items-start">
+                            <!-- ICON -->
+                            <img src="../asset/img/bu.jpg" class="w-12 h-12 rounded-full object-cover">
+
+                            <!-- TEXT -->
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                Currently completing an internship at the University Registrar’s Office (URO), bridging academic theory with professional practice. I specialize in system development, data management, and technical operations, while also managing essential academic records and Transcript of Record (TOR) processing.
+                            </p>
+                        </div>
+
+                        <!-- PARAGRAPH 2 WITH ICON -->
+                        <div class="-mt-2 flex gap-4 items-start">
+                            <!-- ICON -->
+                            <img src="../asset/img/cs.jpg" class="w-12 h-12 rounded-full object-cover">
+
+                            <!-- TEXT -->
+                            <p class="text-sm text-gray-700 leading-relaxed">
+                                I also assist in troubleshooting hardware and software issues while helping ensure smooth daily IT operations.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT: INTERNSHIP PROGRESS -->
+                    <div class="bg-white text-gray-800 rounded-xl p-6 space-y-6 shadow-xl">
+
+                        <h2 class="text-md font-semibold text-gray-900">Internship Progress</h2>
+
+                        <!-- Hours -->
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="text-gray-700">Hours Rendered</span>
+                                <span class="text-[#1a3d62] font-semibold">60.3%</span>
+                            </div>
+                            <div class="w-full bg-blue-300 rounded-full h-2">
+                                <div class="bg-[#1a3d62] h-2 rounded-full w-[60.3%]"></div>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-1">293 / 486 Hours</p>
+                        </div>
+
+                        <!-- Days -->
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="text-gray-700">Days Rendered</span>
+                                <span class="text-green-600 font-semibold">59.0%</span>
+                            </div>
+                            <div class="w-full bg-blue-300 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full w-[59%]"></div>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-1">36 / 61 Days</p>
+                        </div>
+
+                        <!-- Remaining -->
+                        <div class="bg-[#1a3d62] rounded-lg p-4 text-center text-sm text-white">
+                            <span class="text-white font-semibold">192 hours</span> left to complete the internship
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Title (UPDATED TEXT) -->
+                <div class="text-center">
+                    <h1 class="text-3xl font-bold">DTR</h1>
+                    <p class="text-gray-500 text-sm mt-2">
+                        Weekly documentation of tasks, outputs, and learning experiences during internship.
+                    </p>
+                </div>
+
+                <!-- REPORTS (UNCHANGED) -->
+                <div id="reports" class="space-y-10 mb-10">
+
+                    <!-- FEBRUARY -->
+                    <div class="report bg-white shadow-xl rounded-xl p-10 space-y-6" data-month="february">
+                        
+                        <div class="border-b mb-5 text-center">
+                            <h1 class="text-xl font-bold">WEEK 1</h1>
+                            <p class="text-gray-400 text-sm mt-2">February 23 - 27, 2026</p>
+                        </div>
+
+                        <div class="space-y-3 text-sm">
+
+                            <div class="flex justify-between font-bold text-gray-600 border-b pb-2">
+                                <span>Date</span>
+                                <span>Time</span>
+                                <span>Total</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Feb 23</span>
+                                <span>8:00 - 11:50 | 12:35 - 17:15</span>
+                                <span class="font-semibold">8h 30m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Feb 24</span>
+                                <span>8:00 - 12:00 | 13:00 - 17:21</span>
+                                <span class="font-semibold">8h 21m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Feb 26</span>
+                                <span>8:00 - 12:00 | 13:00 - 17:21</span>
+                                <span class="font-semibold">8h 21m</span>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <span>Feb 27</span>
+                                <span>8:00 - 12:00 | 13:00 - 17:10</span>
+                                <span class="font-semibold">8h 10m</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- MARCH -->
+                    <div class="report bg-white shadow-xl rounded-xl p-10 space-y-6" data-month="march">
+
+                        <div class="border-b mb-5 text-center">
+                            <h1 class="text-xl font-bold">MARCH (Office Days)</h1>
+                        </div>
+
+                        <div class="space-y-3 text-sm">
+
+                            <div class="flex justify-between font-bold text-gray-600 border-b pb-2">
+                                <span>Date</span>
+                                <span>Time</span>
+                                <span>Total</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 2</span>
+                                <span>8:05 - 12:00 | 13:00 - 17:10</span>
+                                <span class="font-semibold">8h 05m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 3</span>
+                                <span>8:00 - 12:00 | 13:00 - 17:10</span>
+                                <span class="font-semibold">8h 10m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 4</span>
+                                <span>8:00 - 12:00 | 13:00 - 17:29</span>
+                                <span class="font-semibold">8h 29m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 5</span>
+                                <span>8:02 - 12:00 | 13:00 - 17:22</span>
+                                <span class="font-semibold">8h 20m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 6</span>
+                                <span>8:10 - 12:00 | 13:00 - 17:10</span>
+                                <span class="font-semibold">8h 00m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 9</span>
+                                <span>8:02 - 12:00 | 13:00 - 17:10</span>
+                                <span class="font-semibold">8h 08m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 10</span>
+                                <span>8:00 - 12:00 | 13:00 - 17:13</span>
+                                <span class="font-semibold">8h 13m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 11</span>
+                                <span>8:00 - 12:00 | 13:00 - 17:13</span>
+                                <span class="font-semibold">8h 13m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 12</span>
+                                <span>8:07 - 12:00 | 13:00 - 17:10</span>
+                                <span class="font-semibold">8h 03m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 16</span>
+                                <span>8:00 - 12:00 | 13:00 - 17:13</span>
+                                <span class="font-semibold">8h 13m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 17</span>
+                                <span>7:58 - 12:00 | 13:00 - 17:05</span>
+                                <span class="font-semibold">8h 07m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 18</span>
+                                <span>8:08 - 12:00 | 13:00 - 17:09</span>
+                                <span class="font-semibold">8h 01m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 23</span>
+                                <span>7:58 - 12:00 | 13:00 - 17:04</span>
+                                <span class="font-semibold">8h 06m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 24</span>
+                                <span>8:00 - 12:00 | 13:00 - 17:07</span>
+                                <span class="font-semibold">8h 07m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 25</span>
+                                <span>8:00 - 12:00 | 13:00 - 17:08</span>
+                                <span class="font-semibold">8h 08m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Mar 30</span>
+                                <span>7:54 - 12:00 | 13:00 - 17:05</span>
+                                <span class="font-semibold">8h 11m</span>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <span>Mar 31</span>
+                                <span>8:02 - 12:00 | 13:00 - 17:06</span>
+                                <span class="font-semibold">8h 04m</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- APRIL -->
+                    <div class="report bg-white shadow-xl rounded-xl p-10 space-y-6" data-month="april">
+
+                        <div class="border-b mb-5 text-center">
+                            <h1 class="text-xl font-bold">APRIL (Office Days)</h1>
+                        </div>
+
+                        <div class="space-y-3 text-sm">
+
+                            <div class="flex justify-between font-bold text-gray-600 border-b pb-2">
+                                <span>Date</span>
+                                <span>Time</span>
+                                <span>Total</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Apr 1</span>
+                                <span>8:02 - 12:00 | 13:00 - 17:06</span>
+                                <span class="font-semibold">8h 04m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Apr 6</span>
+                                <span>8:00 - 12:00 | 13:00 - 17:00</span>
+                                <span class="font-semibold">8h 00m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Apr 7</span>
+                                <span>8:00 - 12:00 | 13:00 - 17:00</span>
+                                <span class="font-semibold">8h 00m</span>
+                            </div>
+
+                            <div class="flex justify-between border-b pb-2">
+                                <span>Apr 8</span>
+                                <span>8:00 - 12:00 | 13:00 - 17:00</span>
+                                <span class="font-semibold">8h 00m</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+
+
+        </main>
+    </div>
+
+    <script>
+        const toggleBtn = document.getElementById('toggleSidebar');
+        const sidebar = document.getElementById('sidebar');
+        const bodyEl = document.body;
+
+        // Set initial state based on screen size
+        function setInitialSidebarState() {
+            if (window.innerWidth < 1024) {
+                bodyEl.classList.remove('sidebar-open');
+                bodyEl.classList.add('sidebar-closed');
+                sidebar.classList.add('sidebar-hidden');
+            } else {
+                bodyEl.classList.add('sidebar-open');
+                bodyEl.classList.remove('sidebar-closed');
+                sidebar.classList.remove('sidebar-hidden');
+            }
+        }
+
+        setInitialSidebarState();
+
+        // Update on resize
+        window.addEventListener('resize', setInitialSidebarState);
+
+        toggleBtn.addEventListener('click', () => {
+            if (bodyEl.classList.contains('sidebar-open')) {
+                bodyEl.classList.remove('sidebar-open');
+                bodyEl.classList.add('sidebar-closed');
+                sidebar.classList.add('sidebar-hidden');
+            } else {
+                bodyEl.classList.remove('sidebar-closed');
+                bodyEl.classList.add('sidebar-open');
+                sidebar.classList.remove('sidebar-hidden');
+            }
+        });
+    </script>
+<script>
+    const buttons = document.querySelectorAll(".filter-btn");
+    const reports = document.querySelectorAll(".report");
+
+    buttons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const filter = button.getAttribute("data-filter");
+
+            // 👉 FILTER LOGIC (your original)
+            reports.forEach(report => {
+                if (filter === "all") {
+                    report.style.display = "block";
+                } else if (report.getAttribute("data-month") === filter) {
+                    report.style.display = "block";
+                } else {
+                    report.style.display = "none";
+                }
+            });
+
+            // 👉 ACTIVE BUTTON STYLE (NEW)
+            buttons.forEach(btn => {
+                btn.classList.remove("text-black", "font-bold", "border-b-2", "border-[#1a3d62]");
+                btn.classList.add("text-gray-500");
+            });
+
+            button.classList.remove("text-gray-500");
+            button.classList.add("text-black", "font-bold", "border-b-2", "border-[#1a3d62]");
+
+        });
+
+    });
+</script>
+
+<script>
+    function makeImagesClickable(containerSelector) {
+        const containers = document.querySelectorAll(containerSelector);
+
+        containers.forEach(container => {
+            const images = container.querySelectorAll("img");
+
+            images.forEach(img => {
+                img.classList.add("cursor-pointer");
+
+                // prevent duplicate event binding
+                if (!img.dataset.clickable) {
+                    img.addEventListener("click", function () {
+                        openModal(this.src);
+                    });
+
+                    img.dataset.clickable = "true";
+                }
+            });
+        });
+    }
+
+    function openModal(src) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+
+        modalImg.src = src;
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+    }
+
+    function closeModal() {
+        const modal = document.getElementById("imageModal");
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+    }
+
+    // initialize AFTER page load
+    document.addEventListener("DOMContentLoaded", function () {
+        makeImagesClickable(".report");
+    });
+</script>
+<script>
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+
+            // remove active from all
+            navLinks.forEach(l => {
+                l.classList.remove("text-black", "font-bold", "border-b", "border-black");
+                l.classList.add("text-gray-500");
+            });
+
+            // add active to clicked
+            this.classList.remove("text-gray-500");
+            this.classList.add("text-black", "font-bold", "border-b", "border-black");
+        });
+    });
+</script>
+<script>
+    function makeImagesClickable(containerSelector) {
+        const containers = document.querySelectorAll(containerSelector);
+
+        containers.forEach(container => {
+            const images = container.querySelectorAll("img");
+
+            images.forEach(img => {
+                img.classList.add("cursor-pointer");
+
+                // prevent duplicate event binding
+                if (!img.dataset.clickable) {
+                    img.addEventListener("click", function () {
+                        openModal(this.src);
+                    });
+
+                    img.dataset.clickable = "true";
+                }
+            });
+        });
+    }
+
+    function openModal(src) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+
+        modalImg.src = src;
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+    }
+
+    function closeModal() {
+        const modal = document.getElementById("imageModal");
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+    }
+
+    // initialize AFTER page load
+    document.addEventListener("DOMContentLoaded", function () {
+        makeImagesClickable(".report");
+    });
+</script>
+</body>
+</html>
